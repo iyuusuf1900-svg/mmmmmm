@@ -1,0 +1,19 @@
+ body { font-family: sans-serif; background-color: #F5F7FA; margin: 0; padding: 0; }
+
+.header { text-align: center; margin-top: 50px; margin-bottom: 20px; }
+
+.logo-placeholder { width: 80px; height: 80px; border-radius: 20px; background-color: #FFFFFF; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 0 auto; }
+
+.logo-text { color: #333; font-weight: bold; }
+
+.title { font-size: 24px; font-weight: 700; margin-top: 15px; }
+
+.content { padding: 20px; }
+
+.card { background-color: #FFF; padding: 25px; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 3px 6px rgba(0,0,0,0.05); }
+
+.card-title { color: #888; font-size: 16px; margin-bottom: 10px; }
+
+.stat { font-size: 32px; font-weight: bold; color: #2D3436; }
+
+.sub-stat { color: #00B894; margin-top: 5px; }
