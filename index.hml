@@ -1,0 +1,39 @@
+// Fitness App Module: Tracker.js
+
+class FitnessTracker {
+    constructor(userName) {
+        this.userName = userName;
+        this.workouts = [];
+        this.totalCaloriesBurned = 0;
+    }
+
+    // Add a new workout session
+    logWorkout(type, durationMinutes, calories) {
+        const entry = {
+            type: type,
+            duration: durationMinutes,
+            calories: calories,
+            date: new Date().toLocaleDateString()
+        };
+        this.workouts.push(entry);
+        this.totalCaloriesBurned += calories;
+        console.log(`Workout saved: ${type} for ${durationMinutes} mins.`);
+    }
+
+    // Get summary for GitHub Profile/Dashboard
+    getStats() {
+        return {
+            user: this.userName,
+            sessions: this.workouts.length,
+            totalCalories: this.totalCaloriesBurned,
+            history: this.workouts
+        };
+    }
+}
+
+// Example Usage:
+const myApp = new FitnessTracker("User_Zero_Nine");
+myApp.logWorkout("Running", 30, 300);
+console.log(myApp.getStats());
+
+export default FitnessTracker;
